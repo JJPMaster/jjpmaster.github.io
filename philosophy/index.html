@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>About JJPMaster</title>
+  <base target="_blank">
+  <meta name="robots" content="index,nofollow" />
+  <style>
+    .mark {
+      color: blue;
+      font-size: 1.5em;
+      display: block;
+    }
+    body {
+      font-family: 'Courier New', monospace;
+    }
+    @import url("fonts.css");
+
+body {
+    margin: 0;
+
+    color: white;
+    background-color: #202020;
+
+    font-family: "Heebo", "Quicksand", "Open Sans", "Arial", "Helvetica", sans-serif;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+}
+
+h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+
+    font-weight: normal;
+}
+
+a {
+    color: white;
+}
+
+#header {
+    width: 100vw;
+
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+#header .header_content {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0));
+    min-height: 32px;
+
+    padding-left: 4px;
+    padding-bottom: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .header_logo img {
+    height: 100%;
+    width: 100%;
+}
+
+#header .header_logo {
+    flex: 0 0 32px;
+
+    padding: 16px;
+}
+
+#header ul.header_links {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+#header ul.header_links li {
+    display: inline;
+}
+
+#header ul.header_links li a {
+    margin: 0 32px;
+
+    font-family: "Quicksand", "Heebo", "Arial", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#footer {
+    clear: both;
+
+    padding-top: 128px;
+    padding-bottom: 32px;
+
+    background-color: #101010;
+    color: gray;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#footer > *{
+    margin: 0 2vmax;
+}
+
+#footer a {
+    color: gray;
+}
+
+#footer .footer_logo {
+    width: 75px;
+    height: 75px;
+
+    margin-bottom: 16px;
+
+    border-radius: 50%;
+}
+
+#footer ul.footer_links {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+#footer ul.footer_links li {
+    display: inline;
+}
+
+#footer ul.footer_links li a {
+    margin: 0 4px;
+    color: #ddd;
+
+    font-family: "Quicksand", "Heebo", "Arial", sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.panel {
+    min-height: 100vh;
+}
+
+.panel.pnl_title {
+    height: 100vh;
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.panel .pnl_title_content {
+    height: 100%;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.pnl_title_content_title, .pnl_title_content_title * {
+    margin: 8px 2vmax;
+    font-size: 12vmin;
+	text-align: center;
+}
+
+.pnl_title_content_subtitle {
+    margin: 0 2vmax;
+}
+
+.panel.pnl_sectionHeader .pnl_sectionHeader_content_title {
+    text-transform: unset;
+}
+
+.panel.pnl_sectionHeader {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    border-bottom: 1px solid gray;
+}
+
+.panel.pnl_sectionHeader .pnl_sectionHeader_content {
+    box-sizing: border-box;
+
+    margin: 0 auto;
+    width: 800px;
+
+    padding: 32px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 800px) {
+    .panel.pnl_sectionHeader .pnl_sectionHeader_content {
+        width: 100vw;
+    }
+}
+
+.panel.pnl_sectionHeader .pnl_sectionHeader_content span {
+    display: inline-block;
+    width: 60%;
+}
+
+.panel.pnl_sectionHeader .pnl_sectionHeader_content_title {
+    font-size: 2.5rem;
+}
+
+.panel.pnl_sectionHeader .pnl_sectionHeader_content h1 {
+    margin: 12px 0;
+}
+
+.panel.pnl_sectionHeader .pnl_sectionHeader_content p {
+    margin: 0;
+
+    font-size: 1.2rem;
+}
+
+.panel.pnl_faces {
+    height: 100vh;
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.panel.pnl_faces .pnl_faces_content {
+    height: 100%;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.panel.pnl_faces .pnl_faces_content_title {
+    margin: 8px 0;
+    font-size: 12vmin;
+}
+
+.panel.pnl_faces .pnl_faces_content_projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.panel.pnl_faces .pnl_faces_content_projects img {
+    width: 16vmax;
+    height: auto;
+
+    margin: 1vmax 1.75vmax;
+
+    border-radius: 50%;
+    border: 10px solid white;
+
+    transition: all 0.2s ease-in-out;
+    transform-style: flat;
+    transform-origin: center center;
+}
+
+.panel.pnl_faces .pnl_faces_content_projects img:hover {
+    transform: scaleX(1.1) scaleY(1.1);
+}
+   </style>
+</head>
+<br/><small>&nbsp;&lt; <a href="../">Return to Main Page</a></small>
+<body><h1>Philosophy</h1>
+I declare myself to be a strong believer in free<abbr title="and open source"> </abbr> software. Anyway, a few things about me that don't matter at all are:
+<ol>
+<li>I prefer calling <a href="https://en.wikipedia.org/wiki/Linux">it</a> GNU/Linux (I called it "Linux" [<i>sic</i>] for the majority of my life)</li>
+<li>I don't even like GPLv3 that much (contrary to my Discord nickname), because it is far too restrictive. I prefer licensing most of what I create under the BSD three-clause license, or the X11 License</li>
+<li><a href="https://rationalwiki.org/wiki/User:JJPMaster" target="_blank" title="RationalWiki">I edit RationalWiki</a></li>
+<li>I am a proponent of the term <q>free and open-source software</q>, because it unites the FS and OSS movements</li>
+<li>I am getting bored of writing items on this list</li>
+<li>If a GitHub repository is released under my name that is licensed under anything that is more restrictive than GPLv3, it is safe to assume that my account is compromised.</li>
+</ol>
+<h2>More on copyright</h2>
+Please note that I mark all of my works as "Kopimi" (pronounced "copy me"), meaning I <i>specifically request</i> for my works to be used for any purpose at will.
+<br/><br/>My stance on licensing has changed since I started; I previously released all of my works into the public domain using CC0, but now I use permissive free software licenses like X11, and GPL for my more "important" works.
+</body>
