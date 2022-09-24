@@ -17,7 +17,7 @@ questions =
         ],
         [//-2
             "Anarchism has never, and will never, work.",
-            "A lack of government will inevitably lead to violence and crime."
+            "A lack of government will inevitably lead to violence and crime.",
             "We should be willing to sacrifice some liberties for the good of the nation."
         ]],[//Socialism-Capitalism`
         [//2
@@ -84,7 +84,7 @@ questions =
         [//2
             "All drugs should be legal.",
             "Transhumanism should be one of our primary goals.",
-            "We should accelerate our technological and social progress."
+            "We should accelerate our technological and social progress.",
             "Traditions are nothing but a hindrance in modern society."
         ],
         [//1
