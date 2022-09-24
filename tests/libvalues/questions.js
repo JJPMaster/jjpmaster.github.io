@@ -1,5 +1,5 @@
 questions = 
-    [[//Anarchy-Government`
+    [[//Anarchy-State`
         [//2
             "The very existence of the state is a threat to our liberty.",
             "People's freedoms should be limitless.",
@@ -36,10 +36,10 @@ questions =
             "The poor chose to be that way."
         ],
         [//-2
-            "He who does not work, neither shall he eat."
+            "He who does not work, neither shall he eat.",
             "Corporations should be treated as people.",
             "Socialism has never, and would never, work in practice."
-        ]],[//World-Nation
+        ]],[//World-Nation`
         [//2
             "A united world government would be beneficial to mankind.",
             "We are first and foremost citizens of Earth.",
@@ -59,7 +59,7 @@ questions =
             "My nation should not be involved in international affairs.",
             "The United Nations should be abolished.",
             "Nobody in other countries has our best interests in mind"
-        ]],[//Collective-Individual
+        ]],[//Collective-Individual`
         [//2
             "The individual has no power to make change, only the community does.",
             "Individuals have no value on their own.",
@@ -79,8 +79,8 @@ questions =
             "All people are selfish by nature.",
             "No one else can tell me what to do.",
             "Morality is entirely subjective."
-        ],
-        ]],[//Progressive-Traditional
+        
+        ]],[//Progressive-Traditional`
         [//2
             "All drugs should be legal.",
             "Transhumanism should be one of our primary goals.",
@@ -121,4 +121,5 @@ questions =
             "Libertarians who do not share my economic beliefs are not to be trusted.",
             "There is only one 'true' way to be a libertarian."
         ]
-    ]];
+     ]];
+   
