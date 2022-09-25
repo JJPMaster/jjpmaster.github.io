@@ -111,8 +111,8 @@
         }
     }
 
-    leftArray = ["Federal","Democratic","Globalist","Militarist","Security","Equality","Secular","Progressive","Assimilationist"]
-    rightArray = ["Unitary","Authoritarian","Isolationist","Pacifist","Freedom","Markets","Religious","Traditional","Multiculturalist"]
+    leftArray = ["Anarchist","Socialist","Globalist","Individualist","Progressive","Libertarian Unity"]
+    rightArray = ["Libertarian Statist","Capitalist","Nationalist","Collectivist","Traditionalist","Disunity"]
 
     function setLabel(val,axis) {
         if (val >= 90) { return "Fanatic " + leftArray[axis] } else
@@ -145,24 +145,19 @@
     h2 = 100-h;
     i2 = 100-i1;
 
-    setBarValue("federal", a)
-    setBarValue("unitary", a2)
-    setBarValue("democratic", b)
+    setBarValue("anarchist", a)
+    setBarValue("statist", a2)
+    setBarValue("equality", b)
+    setBarValue("markets", b2)
     setBarValue("authority", b2)
     setBarValue("globalist", c)
     setBarValue("isolation", c2)
-    setBarValue("militarist", d)
-    setBarValue("pacifist", d2)
-    setBarValue("security", e)
-    setBarValue("freedom", e2)
-    setBarValue("equality", f)
-    setBarValue("markets", f2)
-    setBarValue("secular", g)
-    setBarValue("religious", g2)
-    setBarValue("progress", h)
-    setBarValue("tradition", h2)
-    setBarValue("assimilation", i1)
-    setBarValue("multiculture", i2)
+    setBarValue("individualist", d)
+    setBarValue("collectivist", d2)
+    setBarValue("progress", e)
+    setBarValue("tradition", e2)
+    setBarValue("libunity", f)
+    setBarValue("disunity", f2)
     
 
     document.getElementById("a-label").innerHTML = setLabel(a, 0)
@@ -209,10 +204,10 @@
         ctx.drawImage(img, 20, 120, 100, 100);
         img = document.getElementById("img-unitary")
         ctx.drawImage(img, 680, 120, 100, 100)
-        img = document.getElementById("img-democratic")
-        ctx.drawImage(img, 20, 240, 100, 100)
-        img = document.getElementById("img-authority")
-        ctx.drawImage(img, 680, 240, 100, 100)
+        img = document.getElementById("img-equality")
+        ctx.drawImage(img, 20, 720, 100, 100)
+        img = document.getElementById("img-markets")
+        ctx.drawImage(img, 680, 720, 100, 100)
         img = document.getElementById("img-globalist")
         ctx.drawImage(img, 20, 360, 100, 100)
         img = document.getElementById("img-isolation")
@@ -221,26 +216,11 @@
         ctx.drawImage(img, 20, 480, 100, 100)
         img = document.getElementById("img-pacifist")
         ctx.drawImage(img, 680, 480, 100, 100)
-        img = document.getElementById("img-security")
-        ctx.drawImage(img, 20, 600, 100, 100)
-        img = document.getElementById("img-freedom")
-        ctx.drawImage(img, 680, 600, 100, 100)
-        img = document.getElementById("img-equality")
-        ctx.drawImage(img, 20, 720, 100, 100)
-        img = document.getElementById("img-markets")
-        ctx.drawImage(img, 680, 720, 100, 100)
-        img = document.getElementById("img-secular")
-        ctx.drawImage(img, 20, 840, 100, 100)
-        img = document.getElementById("img-religious")
-        ctx.drawImage(img, 680, 840, 100, 100)
         img = document.getElementById("img-progress")
-        ctx.drawImage(img, 20, 960, 100, 100)
+        ctx.drawImage(img, 20, 600, 100, 100)
         img = document.getElementById("img-tradition")
-        ctx.drawImage(img, 680, 960, 100, 100)
-        img = document.getElementById("img-assimilation")
-        ctx.drawImage(img, 20, 1080, 100, 100)
-        img = document.getElementById("img-multiculture")
-        ctx.drawImage(img, 680, 1080, 100, 100)
+        ctx.drawImage(img, 680, 600, 100, 100)
+
 
         ctx.fillStyle="#222222"
         ctx.fillRect(120, 130, 560, 80)
@@ -275,19 +255,11 @@
         ctx.fillStyle="#f44336"
         ctx.fillRect(120, 734, 5.6*f-2, 72)
         ctx.fillStyle="#00897b"
-        ctx.fillRect(682-5.6*f2, 734, 5.6*f2-2, 72)
-        ctx.fillStyle="#ff9800"
-        ctx.fillRect(120, 854, 5.6*g-2, 72)
-        ctx.fillStyle="#03a9f4"
-        ctx.fillRect(682-5.6*g2, 854, 5.6*g2-2, 72)
+        ctx.fillRect(682-5.6*f2, 854, 5.6*f2-2, 72)
         ctx.fillStyle="#9c27b0" 
         ctx.fillRect(120, 974, 5.6*h-2, 72)
         ctx.fillStyle="#8bc34a"
-        ctx.fillRect(682-5.6*h2, 974, 5.6*h2-2, 72)
-        ctx.fillStyle="#ea90ab"
-        ctx.fillRect(120, 1094, 5.6*i1-2, 72)
-        ctx.fillStyle="#3f51b5" 
-        ctx.fillRect(682-5.6*i2, 1094, 5.6*i2-2, 72)
+        ctx.fillRect(682-5.6*g2, 974, 5.6*g2-2, 72)
         ctx.fillStyle="#222222"
         ctx.font="700 80px Montserrat"
         ctx.textAlign="left"
@@ -313,9 +285,6 @@
         if (d2  > 20) {ctx.fillText(d2 + "%", 670, 547.5)}
         if (e2    > 20) {ctx.fillText(e2 + "%", 670, 667.5)}
         if (f2     > 20) {ctx.fillText(f2 + "%", 670, 787.5)}
-        if (g2 > 20) {ctx.fillText(g2 + "%", 670, 907.5)}
-        if (h2  > 20) {ctx.fillText(h2 + "%", 670, 1027.5)}
-        if (i2  > 20) {ctx.fillText(i2 + "%", 670, 1147.5)}
 
         ctx.font="300 30px Montserrat"
         ctx.fillText("9Axes.github.io", 780, 55)
@@ -326,9 +295,6 @@
         ctx.fillText(document.getElementById("d-label").innerHTML, 400, 485)
         ctx.fillText(document.getElementById("e-label").innerHTML, 400, 605)
         ctx.fillText(document.getElementById("f-label").innerHTML, 400, 725)
-        ctx.fillText(document.getElementById("g-label").innerHTML, 400, 845)
-        ctx.fillText(document.getElementById("h-label").innerHTML, 400, 965)
-        ctx.fillText(document.getElementById("i-label").innerHTML, 400, 1085)
     }
     </script>
 </body>
