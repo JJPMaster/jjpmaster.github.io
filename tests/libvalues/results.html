@@ -181,6 +181,7 @@
         dist = 0
         dist += Math.pow(Math.abs(ideologies[i].stats.econ - b), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.govt - a), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.fcus - d), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.dipl - c), 1.73856063)
         dist += Math.pow(Math.abs(ideologies[i].stats.scty - e), 1.73856063)
         if (dist < ideodist) {
