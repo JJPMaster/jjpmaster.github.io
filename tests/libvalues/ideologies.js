@@ -248,4 +248,4 @@ ideologies = [
             "fcus": 20
         }
     }
-];
+]; 
