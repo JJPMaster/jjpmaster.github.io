@@ -288,7 +288,7 @@ ideologies = [
             "scty": 50,
             "fcus": 20
         }
-    }
+    },
     {
         "name": "Anarcho-Capitalism",
         "stats": {
