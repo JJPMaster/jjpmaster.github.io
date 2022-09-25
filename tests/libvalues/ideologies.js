@@ -208,7 +208,6 @@ ideologies = [
         }
     },
     {
-    {
         "name": "Libertarian Capitalism",
         "stats": {
             "econ": 20,
