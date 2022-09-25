@@ -201,21 +201,37 @@ questions =
             "We should undo the technological and social progress we have made.",
             "We must go back to a basic way of life without modern conveniences."
         ]],[//LibUnity-Disunity
-        [//3
+        [//4
             "All libertarians, left and right, should unite against authoritarianism.",
             "All forms of authoritarianism must be treated as equally evil."
         ],
-        [//1
+        [//3
+            "I'd rather ally with any anarchist than any totalitarian.",
+            "All libertarians, before all else, have the same goal."
+        ],    
+        [//2
             "Governmental issues are more important than economic or cultural issues.",
             "I would never want to live in a totalitarian state, regardless of its values."
+        ],
+        [//1
+            "An ideal society can only be achieved through working together with different people.",
+            "I would be fine with any society where our personal freedoms are respected."
         ],
         [//-1
             "I prefer left unity or right unity over libertarian unity.",
             "Right-libertarians and left-libertarians are too different to work together."
         ],
+        [//2
+            "A libertarian society can be established without help from those who disagree with me.",
+            "We need to abolish more than just authoritarianism to achieve a true libertarian society."
+        ],
         [//-3
-            "Libertarians who do not share my economic beliefs are not to be trusted.",
+            "Some forms of libertarianism are inherently superior to others.",
             "There is only one 'true' way to be a libertarian."
+        ],
+        [//-4
+            "Libertarians who do not share my economic beliefs are not to be trusted.",
+            "Any form of libertarianism that doesn't share my beliefs is doomed to failure."
         ]
     ]];
    
