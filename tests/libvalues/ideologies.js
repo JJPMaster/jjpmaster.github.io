@@ -20,11 +20,11 @@ ideologies = [
         }
     },
     {
-        "name": "Democratic Socialism",
+        "name": "Paleolibertarianism",
         "stats": {
-            "econ": 80,
-            "dipl": 50,
-            "govt": 40,
+            "econ": 20,
+            "dipl": 20,
+            "govt": 80,
             "scty": 80,
             "fcus": 50
         }
@@ -45,7 +45,18 @@ ideologies = [
             "econ": 80,
             "dipl": 80,
             "govt": 80,
-            "scty": 80
+            "scty": 80,
+            "fcus": 60
+        }
+    },
+    {
+        "name": "Libertarian Market Socialism",
+        "stats": {
+            "econ": 60,
+            "dipl": 50,
+            "govt": 80,
+            "scty": 80,
+            "fcus": 40
         }
     },
     {
@@ -59,23 +70,13 @@ ideologies = [
         }
     },
     {
-        "name": "Social Liberalism",
+        "name": "Anarcho-Collectivism",
         "stats": {
-            "econ": 60,
-            "dipl": 60,
-            "govt": 40,
-            "scty": 80,
-            "fcus": 50
-        }
-    },
-    {
-        "name": "Social Democracy",
-        "stats": {
-            "econ": 60,
-            "dipl": 70,
-            "govt": 40,
-            "scty": 80,
-            "fcus": 50
+            "econ": 80,
+            "dipl": 50,
+            "govt": 100,
+            "scty": 70,
+            "fcus": 80
         }
     },
     {
@@ -83,13 +84,13 @@ ideologies = [
         "stats": {
             "econ": 60,
             "dipl": 80,
-            "govt": 60,
+            "govt": 50,
             "scty": 100,
             "fcus": 50
         }
     },
     {
-        "name": "Anarcho-Mutualism",
+        "name": "Mutualism",
         "stats": {
             "econ": 60,
             "dipl": 50,
@@ -113,7 +114,7 @@ ideologies = [
         "stats": {
             "econ": 50,
             "dipl": 60,
-            "govt": 60,
+            "govt": 40,
             "scty": 60,
             "fcus": 50
         }
@@ -149,6 +150,16 @@ ideologies = [
         }
     },
     {
+        "name": "Neo-Libertarianism",
+        "stats": {
+            "econ": 30,
+            "dipl": 80,
+            "govt": 40,
+            "scty": 30,
+            "fcus": 50
+        }
+    },
+    {
         "name": "Bleeding-Heart Libertarianism",
         "stats": {
             "econ": 30,
@@ -179,7 +190,7 @@ ideologies = [
         }
     },
     {
-        "name": "Anarcho-Egoism",
+        "name": "Egoist Anarchism",
         "stats": {
             "econ": 40,
             "dipl": 50,
@@ -192,9 +203,29 @@ ideologies = [
         "name": "Hoppeanism",
         "stats": {
             "econ": 0,
-            "dipl": 50,
+            "dipl": 0,
             "govt": 100,
-            "scty": 20,
+            "scty": 0,
+            "fcus": 20
+        }
+    },
+    {
+        "name": "Anarcho-Fascism",
+        "stats": {
+            "econ": 50,
+            "dipl": 0,
+            "govt": 100,
+            "scty": 0,
+            "fcus": 20
+        }
+    },
+    {
+        "name": "National Anarchism/Anarcho-Nazbol",
+        "stats": {
+            "econ": 80,
+            "dipl": 0,
+            "govt": 100,
+            "scty": 0,
             "fcus": 20
         }
     },
@@ -203,7 +234,7 @@ ideologies = [
         "stats": {
             "econ": 30,
             "dipl": 60,
-            "govt": 60,
+            "govt": 50,
             "scty": 80,
             "fcus": 50
         }
@@ -219,9 +250,19 @@ ideologies = [
         }
     },
     {
-        "name": "Market Anarchism",
+        "name": "Pink Capitalism",
         "stats": {
             "econ": 20,
+            "dipl": 50,
+            "govt": 80,
+            "scty": 80,
+            "fcus": 40
+        }
+    },
+    {
+        "name": "Left-Wing Market Anarchism",
+        "stats": {
+            "econ": 60,
             "dipl": 50,
             "govt": 100,
             "scty": 50,
@@ -238,6 +279,16 @@ ideologies = [
             "fcus": 20
         }
     },
+        {
+        "name": "Agorism",
+        "stats": {
+            "econ": 60,
+            "dipl": 50,
+            "govt": 100,
+            "scty": 50,
+            "fcus": 20
+        }
+    }
     {
         "name": "Anarcho-Capitalism",
         "stats": {
