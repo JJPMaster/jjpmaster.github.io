@@ -203,35 +203,43 @@ questions =
         ]],[//LibUnity-Disunity
         [//4
             "All libertarians, left and right, should unite against authoritarianism.",
-            "All forms of authoritarianism must be treated as equally evil."
+            "All forms of libertarianism are created equal.",
+            "Even forms of authoritarianism that agree with me on some issues should be eliminated."
         ],
         [//3
             "I'd rather ally with any anarchist than any totalitarian.",
-            "All libertarians, before all else, have the same goal."
+            "All libertarians, before all else, have the same goal.",
+            "Authoritarians who agree with me on economic issues are worse than libertarians who don't."
         ],    
         [//2
             "Governmental issues are more important than economic or cultural issues.",
-            "I would never want to live in a totalitarian state, regardless of its values."
+            "The government restricting our freedoms is terrible no matter who that government is.",
+            "Authoritarianism, in general, is a force for evil in this world."
         ],
         [//1
             "An ideal society can only be achieved through working together with different people.",
-            "I would be fine with any society where our personal freedoms are respected."
+            "I would be fine with any society where our personal freedoms are respected.",
+            "I would never want to live in a totalitarian state, regardless of its values."
         ],
         [//-1
             "I prefer left unity or right unity over libertarian unity.",
-            "Right-libertarians and left-libertarians are too different to work together."
+            "Right-libertarians and left-libertarians are too different to work together.",
+            "It would be hard to me to work with a libertarian who has different economic beliefs."
         ],
         [//2
             "A libertarian society can be established without help from those who disagree with me.",
-            "We need to abolish more than just authoritarianism to achieve a true libertarian society."
+            "We need to abolish more than just authoritarianism to achieve a true libertarian society.",
+            "Some forms of authoritarianism are worse than others."
         ],
         [//-3
             "Some forms of libertarianism are inherently superior to others.",
-            "There is only one 'true' way to be a libertarian."
+            "There is only one 'true' way to be a libertarian.",
+            "Some libertarians can be worse than authoritarians."
         ],
         [//-4
             "Libertarians who do not share my economic beliefs are not to be trusted.",
-            "Any form of libertarianism that doesn't share my beliefs is doomed to failure."
+            "Any form of libertarianism that doesn't share my beliefs is doomed to failure.",
+            "I would be willing to work with authoritarians who share my economic and cultural beliefs."
         ]
     ]];
    
