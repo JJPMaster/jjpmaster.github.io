@@ -1,7 +1,7 @@
 <head>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
 <link href='style.css' rel='stylesheet' type='text/css'>
-<title>9Axes Results</title>
+<title>LibValues Results</title>
 <link rel="icon" type="x-icon" href="icon.png">
 <link rel="shortcut icon" type="x-icon" href="icon.png">
 <meta charset="utf-8">
@@ -10,7 +10,7 @@
 </script>
 
 <body>
-<h1>9Axes</h1>
+<h1>LibValues</h1>
 <hr>
 
 <h1>Results</h1>
@@ -82,8 +82,6 @@
 <br><br>
 
 <h2 class="ideology">Closest Match: <span class="weight-300" id="ideology-label"></span></h1>
-<p class="ideology">Your 8values ideology (see https://8values.github.io for more information)</p>
-<p class="ideology">Please note this does only factor the Democratic-Authoritarian, Globalist-Isolationist, Equality-Markets, and Progressive-Traditional axes.</p>
 
 <br><br>
 
@@ -290,9 +288,9 @@
         ctx.fillStyle="#3f51b5" 
         ctx.fillRect(682-5.6*i2, 1094, 5.6*i2-2, 72)
         ctx.fillStyle="#222222"
-        ctx.font="700 80px Montserrat"
+        ctx.font="700 40px Montserrat"
         ctx.textAlign="left"
-        ctx.fillText("LibValues: " + "ideology", 20, 90)
+        ctx.fillText("LibValues: " + ideology, 20, 90)
         ctx.font="40px Montserrat"
         ctx.textAlign="right"
 
@@ -318,7 +316,7 @@
         if (h2  > 20) {ctx.fillText(h2 + "%", 670, 1027.5)}
         if (i2  > 20) {ctx.fillText(i2 + "%", 670, 1147.5)}
 
-        ctx.font="300 24px Montserrat"
+        ctx.font="300 20px Montserrat"
         ctx.fillText("jjpmaster.github.io/tests/libvalues", 780, 55)
         ctx.textAlign="center"
         ctx.fillText(document.getElementById("a-label").innerHTML, 400, 125)
