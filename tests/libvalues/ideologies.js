@@ -129,7 +129,7 @@ ideologies = [
         }
     },
     {
-        "name": "Soulism",
+        "name": "Soulism/Ego-Communism",
         "stats": {
             "econ": 100,
             "dipl": 50,
@@ -151,8 +151,8 @@ ideologies = [
     {
         "name": "Bleeding-Heart Libertarianism",
         "stats": {
-            "econ": 40,
-            "dipl": 70,
+            "econ": 30,
+            "dipl": 50,
             "govt": 80,
             "scty": 70,
             "fcus": 50
@@ -189,13 +189,13 @@ ideologies = [
         }
     },
     {
-        "name": "Avaritionism",
+        "name": "Hoppeanism",
         "stats": {
             "econ": 0,
             "dipl": 50,
             "govt": 100,
-            "scty": 50,
-            "fcus": 0
+            "scty": 80,
+            "fcus": 20
         }
     },
     {
