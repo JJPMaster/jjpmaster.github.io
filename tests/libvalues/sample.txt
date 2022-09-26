@@ -1,1 +1,1 @@
-https://jjpmaster.github.io/tests/libvalues/results.html?a=100&b=62&c=75&d=47&e=70&f=62&g=50&h=50&i=50
+https://jjpmaster.github.io/tests/libvalues/results.html?a=34&=62&c=75&d=47&e=70&f=62&g=50&h=50&i=50
