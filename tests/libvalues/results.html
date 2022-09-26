@@ -166,7 +166,7 @@
         var c = document.getElementById("banner")
         var ctx = c.getContext("2d")
         ctx.fillStyle = "#EEEEEE"
-        ctx.fillRect(0,0,800,1200)
+        ctx.fillRect(0,0,800,800)
 
         img = document.getElementById("img-federal")
         ctx.drawImage(img, 20, 120, 100, 100);
@@ -224,6 +224,7 @@
         ctx.fillStyle="#f44336"
         ctx.fillRect(120, 734, 5.6*f-2, 72)
         ctx.fillStyle="#00897b"
+        ctx.fillRect(682-5.6*f2, 734, 5.6*f2-2, 72)
         ctx.fillStyle="#222222"
         ctx.font="700 60px Montserrat"
         ctx.textAlign="left"
