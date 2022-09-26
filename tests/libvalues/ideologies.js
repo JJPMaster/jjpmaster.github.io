@@ -100,22 +100,12 @@ ideologies = [
         }
     },
     {
-        "name": "Centrist",
+        "name": "National Libertarianism",
         "stats": {
-            "econ": 50,
-            "dipl": 50,
-            "govt": 50,
-            "scty": 50,
-            "fcus": 50
-        }
-    },
-    {
-        "name": "Liberalism",
-        "stats": {
-            "econ": 50,
-            "dipl": 60,
-            "govt": 50,
-            "scty": 60,
+            "econ": 30,
+            "dipl": 20,
+            "govt": 80,
+            "scty": 20,
             "fcus": 50
         }
     },
