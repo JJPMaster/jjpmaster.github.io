@@ -61,7 +61,11 @@
 <br><br>
 
 <h2 class="ideology">Closest Match: <span class="weight-300" id="ideology-label"></span><br /></h2><div style="text-align: center; font-family: 'Montserrat', sans-serif; font-size: 24pt; line-height: 24pt;">Ideological matching is a work in progress, and is much less accurate than the values and axes.<br />You can send these results by copying and pasting the URL at the top of the page or using the image below. Think your matched ideology was wrong? Want to help us calibrate the test? Send the results along with your political ideology to us at ssatjyrbusiness@gmail.com, or send us any comments, questions, or criticism.</div>
-
+<div class="element">
+<h2 data-i18n="result-h2-next-matches">Next closest matches</h2> 
+<p data-i18n="next-matches-percent">With your closest match as 100% and farthest as 0%, here is how closely you matched the other ideologies.</p>
+<dl id="next-matches"></dl>
+</div>
 <br><br>
 
 <canvas id="banner" width=800 height=1200 style="font-family:Montserrat"></canvas>
@@ -138,7 +142,11 @@
     document.getElementById("f-label").innerHTML = setLabel(f, 5)
 
     ideology = ""
+    ideodesc = ""
     ideodist = Infinity
+    ideologyToDistance = {};
+    sortedIdeologies = [];
+    ideologyIndexAndDistance = [];
     for (var i = 0; i < ideologies.length; i++) {
         dist = 0
         dist += Math.pow(Math.abs(ideologies[i].stats.econ - b), 2)
@@ -146,11 +154,41 @@
         dist += Math.pow(Math.abs(ideologies[i].stats.fcus - d), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.dipl - c), 1.73856063)
         dist += Math.pow(Math.abs(ideologies[i].stats.scty - e), 1.73856063)
+        
+        ideologyToDistance[ideologies[i].name] = dist;
+        ideologyIndexAndDistance.push({index: i, distance: dist});
         if (dist < ideodist) {
             ideology = ideologies[i].name
             ideodist = dist
         }
     }
+    
+    ideologyIndexAndDistance.sort(function(a, b) {
+        return a.distance - b.distance;
+    });
+
+    distances = ideologyIndexAndDistance.map(function(indexAndDistance) {
+        return indexAndDistance.distance;
+    });
+
+    closestDistance = distances[0];
+    farthestDistance = distances[distances.length - 1];
+    distanceSpan = farthestDistance - closestDistance;
+
+    closestMatch = ideologyIndexAndDistance[0];
+    document.getElementById("ideology-label").innerHTML = getIdeologyNameByIndex(closestMatch.index);
+	document.getElementById("ideodesc-label").innerHTML = getIdeologyDescriptionByIndex(closestMatch.index);
+
+    nextMatches = document.getElementById('next-matches');
+    nextMatches.innerHTML = ideologyIndexAndDistance.slice(1).map(function(indexAndDistance) {
+        i = indexAndDistance.index;
+        ideology = getIdeologyNameByIndex(i);
+        ideodesc = getIdeologyDescriptionByIndex(i);
+        relativeDistance = 1 - (indexAndDistance.distance - closestDistance)/distanceSpan;
+        relativeDistancePercent = Math.round(relativeDistance * 1000)/10;
+        return "<dt>" + ideology + ": " + relativeDistancePercent + "%</dt>" +
+            "<dd>" + ideodesc + "</dd>";
+    }).join("\n");
     
     document.getElementById("ideology-label").innerHTML = ideology
 
