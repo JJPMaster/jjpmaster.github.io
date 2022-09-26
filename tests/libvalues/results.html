@@ -108,11 +108,11 @@
     }
 
     function getIdeologyNameByIndex(i) {
-        return (userLang in ideologies[i].i18n) ? ideologies[i].i18n[userLang].name : ideologies[i].name;
+        return ideologies[i].name;
     }
 
     function getIdeologyDescriptionByIndex(i) {
-        return (userLang in ideologies[i].i18n) ? ideologies[i].i18n[userLang].desc : ideologies[i].desc;
+        return ideologies[i].desc;
     }
 	
     a  = getQueryVariable("a")
